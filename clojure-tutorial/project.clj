@@ -6,4 +6,8 @@
   :dependencies [[org.clojure/clojure "1.8.0"]]
   :main ^:skip-aot clojure-tutorial.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}
+             :dev {:dependencies [[expectations "2.1.9"]] }}
+  :plugins [[lein-expectations "0.0.8"]]
+
+  )

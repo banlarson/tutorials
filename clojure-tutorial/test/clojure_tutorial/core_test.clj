@@ -1,7 +1,4 @@
 (ns clojure-tutorial.core-test
-  (:require [clojure.test :refer :all]
-            [clojure-tutorial.core :refer :all]))
+  (:require [expectations :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(expect 0 0)
